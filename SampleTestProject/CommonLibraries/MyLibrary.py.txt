@@ -1,0 +1,7 @@
+def hold_ctrl(self):
+    self.get_action_chain().key_down(Keys.LEFT_CONTROL)
+    self.get_action_chain().perform()
+
+def release_ctrl(self):
+    self.get_action_chain().key_up(Keys.LEFT_CONTROL)
+    self.get_action_chain().perform()
